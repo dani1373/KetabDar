@@ -2,20 +2,15 @@
 from __future__ import unicode_literals
 
 from django.http import HttpResponse
-from django.shortcuts import render
 
 
-def login(request):
-    return HttpResponse("login")
+def view_list(request):
+    return HttpResponse("list")
 
 
 def update(request):
     return HttpResponse("update")
 
 
-def logout(request):
+def info(request):
     return HttpResponse("logout")
-
-
-def contact_info(request):
-    return HttpResponse("contact info")
